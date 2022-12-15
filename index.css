@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body{
-    background-color: #000000;
+    background-color: #e5e8ef;
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     color: #ffffff;
+}
+
+.navbar{
+    background-color: #757288;
+    border: 10 #757288;
+
+
 }
