@@ -7,9 +7,12 @@ body{
     color: #ffffff;
 }
 
-.navbar{
+#header_wrapper {
+    background:  #757288;
+    padding: 20px 0px;
+}
+
+navbar{
     background-color: #757288;
-    border: 10 #757288;
-
-
+    border: 10px #757288;
 }
