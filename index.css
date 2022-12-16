@@ -10,7 +10,6 @@ body{
 
 #header_wrapper {
     background:  #757288;
-    padding: 20px 0px;
     margin: 5;
     margin-left: 5px;
 }
@@ -18,6 +17,5 @@ body{
 .navbar{
     border: 10px #757288;
     margin: 5;
-    padding: 20px;
     margin-left: 5px;
 }
