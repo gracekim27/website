@@ -5,7 +5,7 @@ body{
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     color: #ffffff;
-    margin: 5;
+    margin: 0;
 }
 
 #header_wrapper {
@@ -15,4 +15,47 @@ body{
 .navbar{
     margin: 10px 0;
     padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: #757288;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display:flex;
+    gap: 1rem;
+}
+
+.site-title{
+    font-size: 2rem;
+}
+
+.nav a{
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.nav li:hover{
+    background-color: #777;
+}
+
+.nav li.active{
+    background-color: #555;
 }
