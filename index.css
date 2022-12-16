@@ -14,4 +14,6 @@ body{
 
 .navbar{
     border: 5px #757288;
+    margin: 1px 0;
+    padding: 3px;
 }
