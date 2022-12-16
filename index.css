@@ -11,6 +11,8 @@ body{
 #header_wrapper {
     background:  #757288;
     padding: 20px 0px;
+    margin: 5;
+    margin-left: 5px;
 }
 
 navbar{
