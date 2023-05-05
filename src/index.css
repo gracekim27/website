@@ -2,12 +2,38 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #757288;
+  background-color: #000000;
   color: #ffffff;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #FFD2D2;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+a:active {
+  color: #FFD2D2;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+
+.active{
+  color: #FFD2D2;
+  text-decoration: none;
+  font-weight: 800;
 }
 
 .header-left {
@@ -27,7 +53,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e5e8ef;
+  background-color: #FFEDED;
+  color:#000000
 }
 
 code {
@@ -37,8 +64,21 @@ code {
 
 
 .circular-image {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+
+.side-by-side {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-top: 175px;
+  margin-left: 60px;
+  font-weight: 600;
+  font-size: 18px;
 }
