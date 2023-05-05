@@ -1,19 +1,15 @@
-import { useState, useEffect } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Contact from './components/Contact';
 
-
-
-const App = () => {
-  const [counter, setCounter] = useState(0);
-  useEffect(() => {
-    setCounter(0);
-  }, [])
+function App() {
   return (
-    <div className="App">
-      <button onClick={() => setCounter((prevCount) => prevCount - 1)}>-</button>
-      <h1>{counter}</h1>
-      <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
