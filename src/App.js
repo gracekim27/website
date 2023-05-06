@@ -3,10 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './index.css';
+import meinfrance from './meinfrance.png';
+
 
 function Projects() {
   return (
     <div>
+       <p>currently under construction! visit again soon ~~ </p>
     </div>
   );
 }
@@ -14,6 +17,7 @@ function Projects() {
 function Contact() {
   return (
     <div>
+      <p>currently under construction! visit again soon ~~ </p>
     </div>
   );
 }
@@ -26,7 +30,7 @@ function App() {
         <header>
         <Navbar fixed='top' expand='lg' className="navbar-nav">
           <Nav>
-            <Nav.Link as={Link} to="/">Grace Kim</Nav.Link>
+            <Nav.Link as={Link} to="/website">Grace Kim</Nav.Link>
             <Nav.Link as={Link} to="/projects"> <h4>Projects</h4></Nav.Link>
             <Nav.Link as={Link} to="/contact"> <h4>Contact</h4></Nav.Link>
           </Nav>
@@ -34,7 +38,7 @@ function App() {
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/website" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
@@ -46,10 +50,9 @@ function App() {
 
 function Home() {
   return (
-    <div>
-      <img src="../public/meinfrance.png" alt = " "/>
-      <h2>Welcome to my home page</h2>
-      <p>Home page content goes here...</p>
+    <div className="circle-text-container">
+      <img src={meinfrance} alt = " " className="circle-img"/>
+      <p className="circle-text" >hello! i'm grace, welcome to my website!</p>
     </div>
   );
 }
