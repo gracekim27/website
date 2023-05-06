@@ -88,13 +88,3 @@ p {
   font-weight: 600;
 }
 
-
-.mini-img {
-  display: inline;
-  background-color: #FFEDED;
-  margin-left: 1px;
-  margin-right: 10px;
-  width: 20%;
-  border-radius: 50%;
-  vertical-align: middle;
-}
