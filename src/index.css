@@ -62,6 +62,11 @@ code {
   right: 130px
 }
 
+.navbar-nav .nav-link:nth-last-child(3) {
+  position: absolute;
+  right: 235px
+}
+
 .circle-img {
   margin-left: 50px;
   margin-top: 50px;
@@ -81,4 +86,15 @@ code {
 p {
   margin-left: 30px;
   font-weight: 600;
+}
+
+
+.mini-img {
+  display: inline;
+  background-color: #FFEDED;
+  margin-left: 1px;
+  margin-right: 10px;
+  width: 20%;
+  border-radius: 50%;
+  vertical-align: middle;
 }
