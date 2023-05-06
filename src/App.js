@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './index.css';
 import meinfrance from './meinfrance.png';
-import me from './me.png';
 
 
 function Projects() {
@@ -33,7 +32,6 @@ function App() {
           <Nav>
             <Nav.Link as={Link} to="/">Grace Kim</Nav.Link>
             <Nav.Link as={Link} to="/projects"> <h4>Projects</h4></Nav.Link>
-            <Nav.Link as={Link} to="https://drive.google.com/file/d/12BEEyUkY2FJpYsjYOI6UHXwf8nqm5YfC/view?usp=sharing"> <h4>Resume</h4></Nav.Link>
             <Nav.Link as={Link} to="/contact"> <h4>Contact</h4></Nav.Link>
           </Nav>
         </Navbar>

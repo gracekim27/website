@@ -62,10 +62,6 @@ code {
   right: 130px
 }
 
-.navbar-nav .nav-link:nth-last-child(3) {
-  position: absolute;
-  right: 235px
-}
 
 .circle-img {
   margin-left: 50px;
@@ -80,7 +76,7 @@ code {
 }
 
 .circle-text {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 p {
