@@ -49,6 +49,12 @@ body {
   margin-right: 20px;
 }
 
+h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
 
 
 h3 {
@@ -67,6 +73,13 @@ h3b {
   font-weight: bold;
 }
 
+
+a2:hover{
+  transform: rotate(360);
+  color: #FFD2D2;
+  text-decoration: none;
+  font-weight: 800;
+}
 
 
 /* Navbar Styles */
@@ -165,3 +178,26 @@ h3b {
   margin-left: 49px;
   margin-top: 10px;
 }
+
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.rotate-flower {
+  display: inline-block;
+  margin: 0 20px;
+  transition: transform 1s ease-in-out;
+}
+
+.header-container:hover .rotate-flower h2 {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

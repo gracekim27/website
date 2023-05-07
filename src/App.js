@@ -87,7 +87,17 @@ function App() {
         <header>
         <Navbar fixed='top' expand='lg' className="navbar-nav">
           <Nav>
-            <Nav.Link as={Link} to="/">Grace Kim</Nav.Link>
+            <Nav.Link as={Link} to="/">
+              <div className='header-container'>
+              <div class="rotate-flower">
+                <h2>✿</h2>
+              </div>
+              <h2>Grace Kim</h2>
+              <div class="rotate-flower">
+                <h2>✿</h2>
+              </div>
+              </div>
+              </Nav.Link>
             <Nav.Link as={Link} to="/projects"> <h4>Projects</h4></Nav.Link>
             <Nav.Link as={Link} to="/contact"> <h4>Contact</h4></Nav.Link>
           </Nav>
