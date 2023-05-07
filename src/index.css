@@ -18,14 +18,26 @@ a {
 
 a:hover{
   color: #FFD2D2;
-  text-decoration: none;
-  font-weight: 800;
+  text-decoration: underline;
 }
 
 a:active {
   color: #FFD2D2;
   text-decoration: none;
   font-weight: 800;
+}
+
+
+.a2 {
+  color:#000000;
+  font-style: oblique;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.a2:hover {
+  color:#6d5151;
+  font-style: oblique;
+  font-weight: 500;
 }
 
 
@@ -47,6 +59,22 @@ body {
   width: 200px;
   height: 30%;
   margin-right: 20px;
+}
+
+
+.img2 {
+  margin-left: 0px;
+  border: 10px solid #FFD2D2;
+  width: 400px;
+  height: 30%;
+  margin-right: 20px;
+}
+
+h1 {
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 25px;
+  color: #282828;
 }
 
 h2 {
@@ -162,7 +190,7 @@ a2:hover{
   display: flex;
   align-items: top;
   margin-top: 20px;
-  margin-right: 40%;
+  margin-right: 25%;
 }
 
 
@@ -201,3 +229,12 @@ a2:hover{
   100% { transform: rotate(360deg); }
 }
 
+
+
+.divider {
+  margin-bottom: 50px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  background-color: #CEB2B2;
+}

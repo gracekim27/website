@@ -6,6 +6,7 @@ import './index.css';
 import meinfrance from './meinfrance.png';
 import project1img from './project1.png';
 import project2img from './project2.png';
+import project3img from './project3.png';
 import { useState } from 'react';
 
 
@@ -43,7 +44,11 @@ function Projects() {
           could give policy makers key insight about resource disparities and 
           educational inequality. Our hypothesis is that Private schools have 
           statistically significant higher rates of competitive success in high school 
-          debate than public schools. </p>
+          debate than public schools. 
+          <br></br>
+          <br></br>
+
+          <a href = "https://github.com/gracekim27/debatedisparities" className = 'a2'>Project Github Here</a> </p>
     </div>
   );
 
@@ -52,20 +57,52 @@ function Projects() {
   const addproj2 = (
     <div className='additional-text-container'>
       <img src={project2img} alt=" " className='img'/>
-      <p>The question we want to answer with our project is, how polarization has taken place within US politics before and after the 2016 Presidential Election?
-We will analyze roll-call voting data of the House and Senate in the 113th, 
-115th, and 117th sessions of Congress to analyze the effects of the 2016 
-Presidential Election. Our hypothesis is that Donald Trump’s 2016 campaign increased polarization within the United States.  </p>
+      <p>The question we want to answer with our project is, how polarization has 
+        taken place within US politics before and after the 2016 Presidential Election?
+        We will analyze roll-call voting data of the House and Senate in the 113th, 
+        115th, and 117th sessions of Congress to analyze the effects of the 2016 
+        Presidential Election. Our hypothesis is that Donald Trump’s 2016 campaign 
+        increased polarization within the United States.  </p>
     </div>
   );
 
+  const project3 = "Touching Pitch with Professor William Cheng";
+
+  const addproj3 = (
+    <>
+    <div className='additional-text-container'>
+      <img src={project3img} alt=" " className='img2'/>
+      <p>Touching Pitch is a multimodal project led by William Cheng that explores 
+        the role of improvisation in classical music. William Cheng is a professor 
+        of music at Dartmouth College. His project, which is still ongoing, has 3 
+        parts - an album, visual novel, and memoir. In my role as one of Professor 
+        Cheng’s Research Assistants, I helped to create a cipher to generate musical 
+        melodies, create a landing site for the project, and secure/set up recording 
+        equipment. 
+
+        <br></br>
+        <br></br>
+
+        <a href = "https://touchingpitch.com" className = 'a2'>Project Site Here</a></p>
+    </div>
+    </>
+  );
   return (
     <div>
+      <div className='divider'>
+        <h1> Personal Projects </h1>
+      </div>
       <div className="bullet-container">
         <h3b><ExpandableSection initialContent={project1} additionalContent={addproj1} /></h3b>
       </div>
       <div className="bullet-container">
         <h3b><ExpandableSection initialContent= {project2} additionalContent={addproj2} /></h3b>
+      </div>
+      <div className='divider'>
+        <h1> Assistant Projects </h1>
+      </div>
+      <div className="bullet-container">
+        <h3b><ExpandableSection initialContent= {project3} additionalContent={addproj3} /></h3b>
       </div>
     </div>
   );
