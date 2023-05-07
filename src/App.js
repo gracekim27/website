@@ -4,12 +4,69 @@ import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './index.css';
 import meinfrance from './meinfrance.png';
+import project1img from './project1.png';
+import project2img from './project2.png';
+import { useState } from 'react';
 
 
-function Projects() {
+
+function ExpandableSection({ initialContent, additionalContent }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => setIsExpanded((prevState) => !prevState);
+
   return (
     <div>
-       <p>currently under construction! visit again soon ~~ </p>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <button className={`expand-button ${isExpanded ? 'rotate' : ''}`} onClick={toggleExpand}>
+        {isExpanded ? '▼' : '▲'}
+      </button>
+        <div className = 'circle-text'>{initialContent}</div>
+      </div>
+      <div className={`additional-content ${isExpanded ? 'expanded' : ''}`}>
+      {additionalContent}
+      </div>
+    </div>
+  );
+}
+
+function Projects() {
+  const project1 = "Rates of Competitive Success in High School Debate Between Private and Public Schools";
+  const addproj1 = (
+    <div className='additional-text-container'>
+      <img src={project1img} alt=" " className='img'/>
+      <p>The question we wanted to answer with our project was, what is the 
+          difference in competitive success between private and public schools 
+          in high school debate? There is a huge disparity in the number of 
+          resources offered to students at public and private schools. We think 
+          that comparing the competitive outcomes between these two groups 
+          could give policy makers key insight about resource disparities and 
+          educational inequality. Our hypothesis is that Private schools have 
+          statistically significant higher rates of competitive success in high school 
+          debate than public schools. </p>
+    </div>
+  );
+
+  const project2 = "Changes in Polarization Before and After the 2016 Presidential Election";
+
+  const addproj2 = (
+    <div className='additional-text-container'>
+      <img src={project2img} alt=" " className='img'/>
+      <p>The question we want to answer with our project is, how polarization has taken place within US politics before and after the 2016 Presidential Election?
+We will analyze roll-call voting data of the House and Senate in the 113th, 
+115th, and 117th sessions of Congress to analyze the effects of the 2016 
+Presidential Election. Our hypothesis is that Donald Trump’s 2016 campaign increased polarization within the United States.  </p>
+    </div>
+  );
+
+  return (
+    <div>
+      <div className="bullet-container">
+        <h3b><ExpandableSection initialContent={project1} additionalContent={addproj1} /></h3b>
+      </div>
+      <div className="bullet-container">
+        <h3b><ExpandableSection initialContent= {project2} additionalContent={addproj2} /></h3b>
+      </div>
     </div>
   );
 }
