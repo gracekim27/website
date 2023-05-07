@@ -83,7 +83,7 @@ function Projects() {
         <br></br>
         <br></br>
 
-        <a href = "https://touchingpitch.com" className = 'a2'>Project Site Here</a></p>
+        <a href = "https://touchingpitch.com" className = 'a2'>Project Github Here</a></p>
     </div>
     </>
   );

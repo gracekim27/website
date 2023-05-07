@@ -18,7 +18,7 @@ a {
 
 a:hover{
   color: #FFD2D2;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
@@ -81,6 +81,7 @@ h2 {
   margin: 0;
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 23px;
 }
 
 
@@ -216,7 +217,7 @@ a2:hover{
 
 .rotate-flower {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 5px;
   transition: transform 1s ease-in-out;
 }
 
