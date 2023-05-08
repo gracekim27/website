@@ -8,6 +8,7 @@ import project1img from './project1.png';
 import project2img from './project2.png';
 import project3img from './project3.png';
 import { useState } from 'react';
+import MatterGravity from './components/Physics';
 
 
 
@@ -154,9 +155,12 @@ function App() {
 
 function Home() {
   return (
+    <div>
+      <div className='matter-gravity-container'><MatterGravity/></div>
     <div className="circle-text-container">
       <img src={meinfrance} alt = " " className="circle-img"/>
       <p className="circle-text" >hello! i'm grace, welcome to my website!</p>
+    </div>
     </div>
   );
 }

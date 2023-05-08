@@ -142,8 +142,12 @@ a2:hover{
 }
 
 .circle-text-container {
-  display: flex;
   align-items: center;
+  display: flex;
+  left: 0;
+  position: absolute;
+  top: 20;
+  z-index: 0;
 }
 
 .circle-text {
@@ -238,4 +242,14 @@ a2:hover{
   padding-bottom: 1px;
   text-align: center;
   background-color: #CEB2B2;
+}
+
+
+.matter-gravity-container {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
